@@ -1,0 +1,15 @@
+p {
+    color: black;
+    background-color: red;
+    padding: 10px;
+}
+.highlight {
+    color: blue;
+    background-color: lightyellow;
+    padding: 10px;
+}
+#special {
+    color: white;
+    background-color: green;
+    padding: 10px;
+}
