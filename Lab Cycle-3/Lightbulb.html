@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Light Bulb Switch</title>
+<style>
+	body{
+		text-align:center;
+		margin-top:50px;
+		font-family:sans-serif;
+}
+	.bulb{
+		width:20px;
+		height:auto;
+		margin:20px;
+	}
+	button{
+		padding:10px;
+		margin:10px;
+		font-size:18px;
+		cursor:pointer;
+	}
+</style>
+</head>
+<body>
+<h1>LIGHT BULB ON/OFF</h1>
+<img id="bulb"src="bulbOff.jpg" alt="light bulb" height=200px width=200px>
+<br>
+<button id="onButton">Turn On </button>
+<button id="offButton">Turn Off</button>
+<script>
+const bulb = document.getElementById('bulb');
+    const onButton = document.getElementById('onButton');
+    const offButton = document.getElementById('offButton');
+
+    onButton.addEventListener('click', () => {
+      bulb.src = "bulbOn.jpg";
+    });
+
+    offButton.addEventListener('click', () => {
+      bulb.src = "bulbOff.jpg";
+    });
+    </script>
+</body>
+</html>
+	
+
